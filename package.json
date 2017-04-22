@@ -1,5 +1,6 @@
 {
   "name": "markdown-previewer",
+  "homepage": "https://n0f3.github.io/react-markdown-previewer/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,12 +9,13 @@
     "prop-types": "^15.5.8",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.10",
-    "react-dom": "^15.4.2",
-    "serve": "latest"
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "eslint": "^3.18.0",
-    "react-scripts": "0.9.5"
+    "gh-pages": "^0.12.0",
+    "react-scripts": "0.9.5",
+    "serve": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,7 +23,9 @@
     "build": "react-scripts build",
     "now-build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/eslintrc"
