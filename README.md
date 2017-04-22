@@ -1,6 +1,6 @@
 # Markdown Previewer
 
-This is a simple React powered app that lets you live preview markdown flavor text in the browser.  
+This is a simple React powered app that lets you live preview for Github-flavored markdown in the browser.  
 
 ## [Live demo](https://markdown-previewer-bxaruqjxby.now.sh/)
 
