@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { Col } from 'react-bootstrap';
 import DOMPurify from 'dompurify';
 
@@ -11,7 +11,7 @@ const MarkdownOutput = (props) => {
 };
 
 MarkdownOutput.propTypes = {
-  output: PropTypes.string.isRequired
+  output: React.PropTypes.string.isRequired
 };
 
 export default MarkdownOutput;
