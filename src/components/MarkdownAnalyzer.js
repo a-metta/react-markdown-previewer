@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col, FormControl } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 class MarkdownAnalyzer extends Component {
   constructor() {
@@ -25,8 +26,8 @@ class MarkdownAnalyzer extends Component {
 }
 
 MarkdownAnalyzer.propTypes = {
-  markdownInput: React.PropTypes.string.isRequired,
-  markdownChange: React.PropTypes.func.isRequired
+  markdownInput: PropTypes.string.isRequired,
+  markdownChange: PropTypes.func.isRequired
 }
 
 export default MarkdownAnalyzer;

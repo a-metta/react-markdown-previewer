@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import DOMPurify from 'dompurify';
+import PropTypes from 'prop-types';
 
 const MarkdownOutput = (props) => {
   return (
@@ -11,7 +12,7 @@ const MarkdownOutput = (props) => {
 };
 
 MarkdownOutput.propTypes = {
-  output: React.PropTypes.string.isRequired
+  output: PropTypes.string.isRequired
 };
 
 export default MarkdownOutput;
